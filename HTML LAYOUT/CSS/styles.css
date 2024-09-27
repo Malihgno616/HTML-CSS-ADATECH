@@ -1,0 +1,59 @@
+/* Cascading style sheets */
+.title {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+section#principais-estilos  {
+    background-color: #000;
+    color: #fff;
+    padding: 50px;
+    margin: 40px;
+    border: 5px solid #da2828;
+    border-radius: 10px;
+}
+
+#principais-estilos .paragrafo{
+  font-size: 22px;
+  color: #ffff00;
+  line-height: 1.5;
+  font-family: 'Arial';
+}
+
+#flexbox .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content:space-between;/*Alinhamento horizontal*/
+
+    align-items: center;/*Alinhamento Vertical*/
+}
+
+#flexbox .container .box {
+    width: 200px;
+    height: 200px;
+    background-color: #0000ff;
+}
+
+#flexbox .container .box-2 {
+  width: 200px;
+  height: 400px;
+  background-color: #00ff22;
+}
+
+section#grid-layout {
+  margin-top: 50px;
+}
+
+#grid-layout .container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*fr = flex row*/
+  grid-template-rows: repeat(2,500px);
+  gap: 20px;
+}
+
+#grid-layout .container-grid .caixa {
+  width: 200px;
+  height: 200px;
+  background-color: #bbff00;
+}
